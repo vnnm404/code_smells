@@ -19,3 +19,4 @@ This software system is a command line game written in python.
 | Bug | Description | Refactoring |
 | - | - | - |
 | No Win Condition | In `play_game.py:102:5`, to win the game we check if the `count` variable is `9`. However, `count` is a `List[]` and thus the game is never winnable. | The check should be `if (count[0] == 9)` but better yet, we never `push` to or `pop` from the `count` list and so it can simply be made an integer. |
+| Canon attacks after death | In `play_game.py:87:26`, the canon damage is applied regardless of whether the canon is destroyed or not (the check isn't done in `canon.attack()` either. | First, we check if the canon is alive using canon health variables `c1` to `c3` and only attack if the health is non-zero. |
