@@ -16,6 +16,7 @@ This software system is a command line game written in python.
 | Duplicated Code | In `board.py`, the class `board` has a method `print_board`, which has a large if-elif ladder, where groups of the blocks execute the same code | Could concatenate the groups where the same code is executed into once condition, and thus have only one conditional block for each unique code block|
 | Dead Code | In `board.py`, the class `board` has a method `print_board`, which has 14 parameters, 3 of which are unused | Removal of the unused parameters |
 | Long Parameter List | In `board.py`, the `board` class has the method `print_board` which has 14 parameters | We can combine parameters `h1` to `h5` into a list `h: List[]` and parameters `c1` to `c3` to a list `c: List[]` |
+| Dead Code | In `canon.py`, the class `canon` has a method `attack`, which has 8 parameters, 2 of which are unused | Removal of the unused parameters |
 
 # Bugs
 | Bug | Description | Refactoring |
