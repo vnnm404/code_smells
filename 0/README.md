@@ -2,7 +2,7 @@
 This software system is a command line game written in python.
 
 # Class Structure
-`todo`
+![UML Diagram](https://i.ibb.co/QFTCtpn/dass-a2-uml.png)
 
 # Code Smells
 *The refactoring column is optional, `na` if not done*
