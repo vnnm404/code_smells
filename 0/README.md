@@ -9,8 +9,9 @@ This software system is a command line game written in python.
 | Smell | Description | Refactoring |
 | - | - | - |
 | Long Parameter List | In `barberian.py`, the `barberian` class has the method `attack` which has 13 parameters | We can combine parameters `h1` to `h6` into a list `h: List[]` and parameters `c1` to `c3` to a list `c: List[]` |
-| Duplicated Code | In `barberian.py`, the `barberian` class has the method `attack` which has a large if-elif ladder where each block carries ut similar functionality of causing damage to particular object and removing the object, if its health is less than or equal to zero | if the above refactoring suggestion is followed, we have arrays, for the huts and cannons, so we can use simple string matching to reduce the amount of conditionla blocks required|
+| Duplicated Code | In `barberian.py`, the `barberian` class has the method `attack` which has a large if-else if ladder where each block carries similar functionality of causing damage to a particular object and removing the object, if its health is less than or equal to zero | If the above refactoring suggestion is followed, we have arrays, for the huts and cannons, so we can use simple string matching to reduce the amount of conditional blocks required |
 
 # Bugs
 | Bug | Description | Refactoring |
 | - | - | - |
+| No Win Condition | In `play_game.py:102:5`, to win the game we check if the `count` variable is `9`. However, `count` is a `List[]` and thus the game is never winnable. | The check should be `if (count[0] == 9)` but better yet, we never `push` to or `pop` from the `count` list and so it can simply be made an integer. |
