@@ -10,6 +10,7 @@ This software system is a command line game written in python.
 | - | - | - |
 | Long Parameter List | In `barberian.py`, the `barberian` class has the method `attack` which has 13 parameters | We can combine parameters `h1` to `h6` into a list `h: List[]` and parameters `c1` to `c3` to a list `c: List[]` |
 | Duplicated Code | In `barberian.py`, the `barberian` class has the method `attack` which has a large if-else if ladder where each block carries similar functionality of causing damage to a particular object and removing the object, if its health is less than or equal to zero | If the above refactoring suggestion is followed, we have arrays, for the huts and cannons, so we can use simple string matching to reduce the amount of conditional blocks required |
+| Uncommunicative Name | In `barberian.py`, the `barberian` class has the method `move` which has parameters `a` and `b`. These variables are grids but this information is not conveyed anywhere in the class nor in the variable names. | Rename `a` to `board_grid` and `b` to `obs_grid`. |
 
 # Bugs
 | Bug | Description | Refactoring |
