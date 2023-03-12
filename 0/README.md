@@ -12,6 +12,7 @@ This software system is a command line game written in python.
 | Duplicated Code | In `barberian.py`, the `barberian` class has the method `attack` which has a large if-else if ladder where each block carries similar functionality of causing damage to a particular object and removing the object, if its health is less than or equal to zero | If the above refactoring suggestion is followed, we have arrays, for the huts and cannons, so we can use simple string matching to reduce the amount of conditional blocks required |
 | Uncommunicative Name | In `barberian.py`, the `barberian` class has the method `move` which has parameters `a` and `b`. These variables are grids but this information is not conveyed anywhere in the class nor in the variable names. | Rename `a` to `board_grid` and `b` to `obs_grid`. |
 | Refused Bequest | In `object.py`, the class `CREATE_TOWNHALL` inherits from class `scenery` but never uses any parent functions, in fact, the method `create_townhall` is identical the method `create_townhall` in the parent class `scenery`. | Remove the use of inheritance |
+| Oddball Solution | In `canon.py`, class `canon` is used to represent all classes, the method `attack` loops over every canon and attacks for all of them. | The `canon` class should represent **1** canon and multiple instances of this class should be instantiated for multiple canons. |
 
 # Bugs
 | Bug | Description | Refactoring |
