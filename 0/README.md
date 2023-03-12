@@ -13,6 +13,7 @@ This software system is a command line game written in python.
 | Uncommunicative Name | In `barberian.py`, the `barberian` class has the method `move` which has parameters `a` and `b`. These variables are grids but this information is not conveyed anywhere in the class nor in the variable names. | Rename `a` to `board_grid` and `b` to `obs_grid`. |
 | Refused Bequest | In `object.py`, the class `CREATE_TOWNHALL` inherits from class `scenery` but never uses any parent functions, in fact, the method `create_townhall` is identical the method `create_townhall` in the parent class `scenery`. | Remove the use of inheritance |
 | Oddball Solution | In `canon.py`, class `canon` is used to represent all classes, the method `attack` loops over every canon and attacks for all of them. | The `canon` class should represent **1** canon and multiple instances of this class should be instantiated for multiple canons. |
+| Oddball Solution | List variables are used in many places where a simple integer would've sufficed, for example, `count`, `c1` to `c3`, and `h1` to `h6`. These variables are never pushed to or popped from and so they are never used as lists.  | Change these variables to simple integers. |
 
 # Bugs
 | Bug | Description | Refactoring |
