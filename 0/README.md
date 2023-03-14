@@ -24,6 +24,7 @@ This software system is a command line game written in python.
 | Data Class | In `king.py` the king class contains methods that doesn't use the data pf the class, but rather uses arguments which represent the same values | Methods can use less arguments and instead use the data of the class | 
 | Duplicated Code | In `play_game.py`, the developer has rewritten the same piece of code in the if-else conditional block (in the game loop), when the space input (' ') is being conditioned, only change in the different cases is the name of the object variable (cannon, huts etc). | We can create a common function and take the object variable as the argument, and just call that function from the condition block | 
 | Duplicated Code | In `king.py`, again the developer is using almost the same code in multiple if-else blocks, with only change being the variable accessed, which would instead suit better as a function argument | Creating a common method and using that in the conditioning, with the object variable as the argument to that method | 
+| Dead Code | In `barberian.py` the constructor method needlessly has the observer-grid as an argument | Remove that argument from the init method | 
 
 # Bugs
 | Bug | Description | Refactoring |
