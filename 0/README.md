@@ -30,6 +30,7 @@ This software system is a command line game written in python.
 | Dead Code | The file `observer.py` is never used, it contains a class `obs` but it was redefined in `object.py` and `obs` is always imported from `object.py`. | Deleting the file `observer.py`. |
 | Data Class | In `spell.py`, class `spell` does not contain any data, only a function that works only with the parameters passed. | Method need not be in a class. |
 | Oddball Solution | In `spell.py`, class `spell` implements the rage spell but the heal spell is not implemented. | Implement the heal spell as a class inheriting from the `spell` class |
+| Lack of Documentation | No file except `play_game.py` has any explanatory comments | Write comments for hard to understand to code. |
 
 # Bugs
 | Bug | Description | Refactoring |
