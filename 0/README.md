@@ -21,7 +21,8 @@ This software system is a command line game written in python.
 | Long Parameter List | In `board.py`, the `board` class has the method `print_board` which has 14 parameters | We can combine parameters `h1` to `h5` into a list `h: List[]` and parameters `c1` to `c3` to a list `c: List[]` |
 | Dead Code | In `canon.py`, the class `canon` has a method `attack`, which has 8 parameters, 2 of which are unused | Removal of the unused parameters |
 | Long Method | In `canon.py`, the class `canon` has a method `attack`, in which the developer has written code thaat contains 2 for loops that iteratoe over every grid-cell in the range of each cannon, to check if a the King or a Barbarian is in that grid-cell or not| We can just check if the King and the Barbarians are in range by using the distance formula instead pf checking each grid-cell |
-| Data Class | In `king.py` the king class contains methods that doesn't use the data pf the class, but rather uses arguments which represent the same values | Methods can use less arguments and instead use the data of the class | 
+| Data Class | In `king.py` the king class contains methods that doesn't use the data of the class, but rather uses arguments which represent the same values | Methods can use less arguments and instead use the data of the class |
+| Data Class | In `object.py`, `scenery`, `CREATE_TOWNHALL`, and `obs` classes don't use the data stored in the class, all methods in these classes modify external variables. They set but do not use any class variables. | Methods need not be placed inside a class. Instead, they should be part of a class that modifies the data that is passed as parameters. |
 
 # Bugs
 | Bug | Description | Refactoring |
