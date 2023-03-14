@@ -197,12 +197,3 @@ while(1):
                 count[0]+=1
     obj_board.print_board(king_movement,c1,c2,c3,h1,h2,h3,h4,h5,th,obj_obs.get_grid(),king_movement.health, BarbList)
 file.close()
-        
-            
-        
-
-    
-
-    
-
-
