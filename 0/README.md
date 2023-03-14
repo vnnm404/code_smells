@@ -28,7 +28,8 @@ This software system is a command line game written in python.
 | Duplicated Code | In `king.py`, again the developer is using almost the same code in multiple if-else blocks, with only change being the variable accessed, which would instead suit better as a function argument | Creating a common method and using that in the conditioning, with the object variable as the argument to that method | 
 | Dead Code | In `barberian.py` the constructor method needlessly has the observer-grid as an argument | Remove that argument from the init method | 
 | Dead Code | The file `observer.py` is never used, it contains a class `obs` but it was redefined in `object.py` and `obs` is always imported from `object.py`. | Deleting the file `observer.py`. |
-| Data Class | In `spell.py`, class `spell` does not contain any data, only a function that works only with the parameters passed. | Method need not be in a class. | 
+| Data Class | In `spell.py`, class `spell` does not contain any data, only a function that works only with the parameters passed. | Method need not be in a class. |
+| Oddball Solution | In `spell.py`, class `spell` implements the rage spell but the heal spell is not implemented. | Implement the heal spell as a class inheriting from the `spell` class |
 
 # Bugs
 | Bug | Description | Refactoring |
